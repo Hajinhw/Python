@@ -77,9 +77,12 @@ i = 0
 while i < 10:
     print(b[d])
     f = input('이말의 사자성어는? : ')
-    if a.index(f) == d:
+    if f in a and a.index(f) == d:
         print('\n맞습니다.. 게임을 종료합니다.')
         break
+    elif f not in a:
+        print('\n틀렸습니다...다시 도전 !\n')
+        continue
     else:
         print('\n틀렸습니다...다시 도전 !\n')
         continue
