@@ -33,7 +33,7 @@ def add():
 
 result = add()
 print(result)
-'''
+
 # 반환값이 있는 함수 정의
 
 def add2():
@@ -45,3 +45,5 @@ def add2():
 
 result = add2()
 print(result)
+'''
+
