@@ -1,0 +1,6 @@
+Hi!
+varible & constant
+data type % operater
+if statement
+for statement
+while
