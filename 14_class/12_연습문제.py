@@ -21,3 +21,5 @@ if __name__ == '__main__':
     researcher_john.show_info()
     print("="*50)
     researcher_tedd.show_info()
+
+

@@ -43,6 +43,7 @@ print(f'insert 후 {c}')
 # 7. remove(값) : 지정한 값을 리스트에서 제거. 첫번째 값만 제거
 c.remove('강감찬')
 print(f'c.remove("강감찬") 후 : {c}')
+
 # 8. count(값) : 리스트에서 지정한 값의 개수 반환
 # for i in range(c.count('강감찬')):
 #   c.remove()

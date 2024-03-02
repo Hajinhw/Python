@@ -22,25 +22,33 @@ my_sum('data/mysum.txt', 'r')
 # 2번.
 
 my_list1 = []
-my_list2 = []
 cnt = []
 with open('data/yesterday.txt', 'r') as f:
-    data = f.readlines()
-    for i in data:
-        word = i.lower().strip('\n').split(' ')
-        for x in word:
-            my_list1.append(x)
-            cnt.append(my_list1.count(x))
-
-            if x not in my_list2:
-                my_list2.append(x)
-            else:
-                pass
-            list2 = sorted(my_list2)
+    while True:
+        text = f.readline()
+        if not text:
+            break
+        word = text.lower().strip('\n').strip().split(' ')
+        for i in word:
+            my_list1.append(i)
+    my_list2 = sorted(my_list1)
+    for k in range(my_list2.count('')):
+        my_list2.remove('')
 
 
+    my_list3 = []
+    for j in my_list2:
+        if j not in my_list3:
+            my_list3.append(j)
+        else:
+            pass
+
+    for p in my_list3:
+        cnt.append(my_list2.count(p))
 
 
-print(list2,cnt)
+    for o in range(len(my_list3)):
+        result = (f'"{my_list3[int(o)]}":{cnt[int(o)]}')
+        print(result)
 
 
