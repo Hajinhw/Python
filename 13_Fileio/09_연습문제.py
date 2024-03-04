@@ -28,7 +28,7 @@ with open('data/yesterday.txt', 'r') as f:
         text = f.readline()
         if not text:
             break
-        word = text.lower().strip('\n').strip().split(' ')
+        word = text.lower().strip('\n').split(' ')
         for i in word:
             my_list1.append(i)
     my_list2 = sorted(my_list1)
