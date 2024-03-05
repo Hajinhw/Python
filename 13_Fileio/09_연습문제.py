@@ -1,4 +1,6 @@
 '''
+# 1번.
+
 with open('data/s.txt', 'r') as f:
     data = f.readlines()
     new = sorted(data)
@@ -50,5 +52,4 @@ with open('data/yesterday.txt', 'r') as f:
     for o in range(len(my_list3)):
         result = (f'"{my_list3[int(o)]}":{cnt[int(o)]}')
         print(result)
-
 
